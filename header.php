@@ -54,10 +54,27 @@
 					<?php // bloginfo('description'); ?>
 
 
-					<nav role="navigation">
+					<nav role="navigation" id='mainnav'>
 						<?php bones_main_nav(); ?>
 					</nav>
 
+
+
 				</div> <!-- end #inner-header -->
+
+				<!-- Mobile Menu -->
+
+					<nav id="mobile">
+ 
+					    <div id="toggle-bar">
+					        <strong><a class="mtoggle" href="#">MAIN MENU</a></strong>
+					        <a class="navicon mtoggle" href="#">MAIN MENU</a>
+					    </div>
+					    <div id='mmenu'>
+					    	<?php bones_main_nav(); ?>
+<!-- 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?> -->
+						</div>
+					</nav> 
+					<!-- End Mobile Menu -->
 
 			</header> <!-- end header -->

@@ -6,7 +6,7 @@
 							<?php bones_footer_links(); ?>
 									</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> &bull; Design by <a href src='http://www.creativembers.com'> Creativembers.com </a></p>
 
 				</div> <!-- end #inner-footer -->
 

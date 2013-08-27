@@ -15,7 +15,15 @@ upon your base.scss styles.
 
 ******************************************************************/
 
-
+	#logo {
+		font-family: "Loved by the King", Helvetica, Arial, sans-serif;
+		font-size: 3.8em;
+		line-height: 0;
+		text-shadow: 1px 1px 0 #FFCF9D, 2px 2px 1px #FFE3C7, -2px -2px 4px #FFE3C7;
+		margin: 1.6em 0 0.5em;
+		position: relative;
+		white-space: nowrap;
+		}
 	
 /*********************
 NAVIGATION STYLES

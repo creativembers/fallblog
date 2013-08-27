@@ -59,7 +59,7 @@ $alert-blue:        #d5edf8;
 $black:             #000;
 $white:             #fff;
 
-$bones-pink:        #f01d4f;
+$bones-pink:        #F15A54;
 $bones-blue:        #1990db;
 
 $link-color:        $bones-pink;
@@ -76,8 +76,10 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif:        'open sans', Helvetica, Arial, sans-serif;
+$condensed:        'open sans condensed light', Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$script:			"Loved by the King", Helvetica, Arial, sans-serif;
 
 
 /* 	To embed your own fonts, use this syntax
@@ -88,18 +90,60 @@ $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 	Be sure to remove the comment brackets.
 */
 
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('library/fonts/font-name.eot');
-    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
+@font-face {
+	font-family: 'Loved by the King';
+	src: url('../fonts/lovedbytheking-webfont.eot');
+	src: url('../fonts/lovedbytheking-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lovedbytheking-webfont.woff') format('woff'),
+         url('../fonts/lovedbytheking-webfont.ttf') format('truetype'),
+         url('../fonts/lovedbytheking-webfont.svg#font-name') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+    font-family: 'open sans condensed bold';
+    src: url('../fonts/opensans-condbold-webfont.eot');
+    src: url('../fonts/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-condbold-webfont.woff') format('woff'),
+         url('../fonts/opensans-condbold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open sans condensed light';
+    src: url('../fonts/opensans-condlight-webfont.eot');
+    src: url('../fonts/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-condlight-webfont.woff') format('woff'),
+         url('../fonts/opensans-condlight-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open sans regular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'open sans semibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
@@ -130,8 +174,8 @@ span.amp {
 
 .alert-info {
 	@extend %alert;
-	border-color: darken($alert-blue, 5%);
-	background: $alert-blue;
+	border-color: #FFDCBA;
+background: #FEF0E3;
 }
 
 .alert-error {

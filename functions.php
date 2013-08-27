@@ -161,5 +161,6 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+show_admin_bar(false);
 
 ?>
